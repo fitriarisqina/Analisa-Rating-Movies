@@ -1,0 +1,38 @@
+- genre (id,nama_genre)
+- actor (id,nama_actor)
+- director (id,nama_director)
+- country (id,nama_country)
+- movies (id,title,tahun,duration,languange,description,date_published)
+
+CREATE TABLE `movie_analysis`.`genre` (
+  `id` INT NOT NULL,
+  `nama` VARCHAR(145) NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `movie_analysis`.`actor` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nama` VARCHAR(145) NULL,
+  PRIMARY KEY (`id`));
+
+
+CREATE TABLE `movie_analysis`.`director` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nama` VARCHAR(145) NULL,
+  PRIMARY KEY (`id`));
+
+
+CREATE TABLE `movie_analysis`.`country` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nama` VARCHAR(145) NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `movie_analysis`.`movies` (
+  `id` INT NOT NULL,
+  `title` VARCHAR(145) NULL,
+  `tahun` INT NULL,
+  `duration` INT NULL,
+  `language` VARCHAR(145) NULL,
+  `description` TEXT NULL,
+  `date_published` DATETIME NULL,
+  PRIMARY KEY (`id`));
+
